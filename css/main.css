@@ -1,0 +1,82 @@
+/* 곧 삭제 할 CSS 파일 */
+
+
+
+div.test_slide_wrap{
+  position: relative;
+}
+
+ul.test_slide {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  position: relative;
+  left: 0;
+  top: 0;
+
+  margin: 0 auto;
+}
+
+ul.test_slide>li {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+ul.test_slide>li:nth-child(1){
+  background: #faa;
+}
+
+ul.test_slide>li:nth-child(2){
+  background: #afa;
+}
+
+ul.test_slide>li:nth-child(3){
+  background: #aaf;
+}
+
+ul.test_slide>li:nth-child(4){
+  background: #ffa;
+}
+
+ul.test_slide>li:nth-child(5){
+  background: #aff;
+}
+
+
+div.dot_wrap {
+  position: absolute;
+  bottom: -50px;
+  z-index: 8;
+
+  width: 50%;
+}
+
+ul.dot_list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+ul.dot_list>li {
+  margin: 0 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #aaa;
+}
+
+ul.dot_list>li.on {
+  background: #f77;
+}
